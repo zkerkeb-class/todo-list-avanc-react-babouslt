@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#root {
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h1 {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 12px 15px;
+  border: 2px solid #ddd;
+  border-radius: 25px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: #5c6bc0;
+}
+
+button {
+  padding: 12px 20px;
+  border: none;
+  background-color: #5c6bc0;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 25px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  background-color: #3f51b5;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+button:disabled {
+  background-color: #ccc;
+  box-shadow: none;
+}
+
+button + button {
+  margin-left: 10px;
+}
+
+ul {
+  list-style-type: none;
+  margin-top: 20px;
+  padding: 0;
+}
+
+li {
+  background-color: #f9f9f9;
+  padding: 15px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+li:hover {
+  transform: scale(1.02);
+}
+
+li.completed {
+  text-decoration: line-through;
+  color: #999;
+}
+
+li button {
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  font-size: 14px;
+  padding: 8px 12px;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: background-color 0.3s ease;
+}
+
+li button:hover {
+  background-color: #ff3b3b;
+}
+
+.filter-buttons {
+  margin-top: 10px;
+}
+
+.filter-buttons button {
+  padding: 8px 15px;
+  font-size: 14px;
+  margin-right: 5px;
+  background-color: #ddd;
+  color: #333;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.filter-buttons button.active {
+  background-color: #5c6bc0;
+  color: white;
+}
+
+.filter-buttons button:hover {
+  background-color: #b0bec5;
+  color: white;
+}
+
+.cursor-aim {
+  cursor: url("../public/images/viseur.png"), crosshair;
+}
+
+.complete-btn {
+  background-color: #4caf50;
+  color: white;
+  padding: 8px 12px;
+  font-size: 14px;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.complete-btn:hover {
+  background-color: #45a049;
+}
+
+.logo {
+  width: 5px;
+  height: 5px;
+  margin-bottom: 20px;
+}
+
+.bouncing-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.bouncing-image {
+  position: absolute;
+  width: 50px;
+  height: auto;
+  z-index: 1;
+}
